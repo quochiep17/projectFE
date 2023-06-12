@@ -1,0 +1,75 @@
+.header {
+    border-bottom: 2px solid #00000026;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0%;
+    z-index: 1;
+    background-color: #ddebc278;
+    backdrop-filter: blur(20px);
+    max-width: 100%;
+    margin: auto;
+}
+
+.header div {
+    align-items: center;
+}
+
+.header .logo {
+    text-align: center;
+}
+
+.header .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.header .cart {
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.header .user {
+    justify-content: left;
+    font-size: xx-large;
+}
+
+.header .menu {
+    justify-content: center;
+    list-style: none;
+}
+
+.header .menu li {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.header .menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .menu li a:hover {
+    color: green;
+}
+
+.header .menu li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: green;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.header .menu li:hover::after {
+    transform: scaleX(1);
+}

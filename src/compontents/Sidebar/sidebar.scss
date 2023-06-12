@@ -1,0 +1,22 @@
+.sidebar h2 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.sidebar form {
+    font-size: large;
+}
+
+.sidebar form .content {
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+}
+
+.sidebar form .content .price {
+    width: 102px;
+    height: 30px;
+}
+
+.sidebar form .content button {
+    width: 100%;
+}

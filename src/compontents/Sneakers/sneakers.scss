@@ -1,0 +1,15 @@
+.sneakers .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sneakers .product-item {
+    border: 1px solid grey;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sneakers .product-item img {
+    width: 100%;
+}
